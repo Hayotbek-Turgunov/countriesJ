@@ -467,12 +467,24 @@ a{
     position: absolute;
     top: 200px;
   }
+  .filters-search-input{
+    top: -10px;
+  }
+  .index-countries-item{
+    margin-bottom: 40px;
+  }
 }
 
 @media only screen and (max-width: 560px){
   .index-countries-list{
     display: flex;
     justify-content: center;
+  }
+  .index-countries-list{
+    top: 120px;
+  }
+  .filters-region-select{
+    top: 80px;
   }
 }
 
