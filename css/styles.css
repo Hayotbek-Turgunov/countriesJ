@@ -66,8 +66,10 @@ body{
   font-family:"Nunito Sans","Arial",sans-serif;
   font-size: 14px;
   line-height: 16px;
-  background-color: #fff;
+  background-color:var(--body-color);
   color: #111517;
+  transition: background-color 0.4s ease,
+     color 0.4s ease;
 }
 
 img{
@@ -109,7 +111,7 @@ a{
   padding-top: 23px;
   padding-bottom: 24px;
   background-color: var(--element-bg);
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.056);
   white-space: nowrap;
 
 }
@@ -132,17 +134,17 @@ a{
   opacity: 0.6;
 } 
 
-.site-header-theme-togler {
+.site-header-theme-toggler {
   padding: 0;
   border: 0;
   background-color: transparent;
   cursor: pointer;
   color: var(--text-color);
 }
-.site-header-theme-togler:hover{
+.site-header-theme-toggler:hover{
   opacity: 0.8;
 }
-.site-header-theme-togler:active{
+.site-header-theme-toggler:active{
   opacity: 0.6;
 }
 .site-header-theme-toggler-inner {
