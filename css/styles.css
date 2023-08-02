@@ -171,7 +171,8 @@ a{
   margin-bottom: 48px;
 }
 .filters-search-input {
-  min-width: 480px;
+  width: 100%;
+  max-width: 480px;
   border: none;
   box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
   background-color: var(--element-bg);
@@ -294,15 +295,9 @@ a{
 
 /* COUNTRY-INFO-WRAPPER */
 .country-page-info-wrapper {
-  display: flex;
-  /* flex-wrap: wrap;  */
-  
+  display: flex;  
 }
-.country-page-flag {
-  width: 560px;
-  height: 400px;
-  object-fit: cover;
-}
+
 .country-page-info {
   padding: 40px;
   
@@ -323,12 +318,10 @@ a{
 }
 .countrry-page-details {
   width: 250px;
-  
 }
 
 .country-page-details-item{
   display: flex;
-  
 }
 
 .country-page-details-item:not(:last-child) {
@@ -397,6 +390,102 @@ a{
 
 /* MEDIA */
 
-@media only screen and (max-width: 1295px) {
+@media only screen and (max-width: 990px) {
+  .country-page-flag{
+    height: 300px;
+  }
+  .country-page-dls-wrapper{
+    margin-bottom: 10px;
+  }
+  .country-page-info{
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   
+}
+
+
+@media only screen and (max-width: 860px){
+  .country-page-info-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+  }
+  .country-page-flag{
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .country-page-info{
+    padding-left: 0;
+  }
+  .country-page-wrapper{
+    margin-bottom: 40px;
+  }
+  .main-content{
+    position: relative;
+  }
+  .country-page-wrapper{
+    position: absolute;
+    top: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 740px) {
+  .filters{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .filters-search-input{
+    position: absolute;
+    left: 0;
+  }
+  
+  .filters-region-select{
+    position: absolute;
+    left: 0;
+    top: 100px;
+  }
+  
+  .filters-search-input:not(:last-child){
+    margin-bottom: 20px;
+  }
+  
+  .index-countries{
+    position: relative;
+  }
+  .index-countries-list{
+    position: absolute;
+    top: 200px;
+  }
+}
+
+@media only screen and (max-width: 560px){
+  .index-countries-list{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 516px) {
+  .site-header-logo{
+    font-size: 14px;
+    line-height: normal;
+  }
+  .site-header-theme-toggler-text{
+    font-size: 12px;
+    line-height: normal;
+  }
+  .main-content{
+    padding-bottom: 20px;
+  }
 }
