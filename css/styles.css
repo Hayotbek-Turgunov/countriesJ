@@ -228,13 +228,22 @@ a{
   display: flex;
   flex-direction: column;
 }
-.index-country-name {
+/* .index-country-name {
   margin-top: 0;
   font-weight: 800;
   font-size: 15px;
   line-height: 26px;
   margin-bottom: 16px;
   color: var(--text-color);
+} */
+.index-country-link{
+  margin-top: 0;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 26px;
+  margin-bottom: 16px;
+  color: var(--text-color);
+
 }
 .index-country-details {
   margin: 0;
